@@ -1,0 +1,21 @@
+.up-button {
+  position: fixed;
+  right: 0;
+  top: calc(50vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 16px 0px 0px 0px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .up-button {
+    display: none;
+  }
+}

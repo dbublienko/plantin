@@ -1,0 +1,30 @@
+.path-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #91a0b6;
+
+  &::after {
+    content: url(../../images/arrow-right.svg);
+    margin-left: 16px;
+    margin-right: 16px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog {
+    display: none;
+  }
+
+  .path-name::after {
+    display: none;
+  }
+
+  .path-name::before {
+    content: url(../../images/arrow-left.svg);
+    margin-left: 0;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}

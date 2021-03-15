@@ -1,0 +1,43 @@
+.top {
+  &-articles {
+    margin-top: 16px;
+  }
+
+  &-articles::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+    margin-top: 56px;
+  }
+
+  &-rubric {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #91a0b6;
+  }
+
+  &-articles-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top {
+    
+    &-articles {
+      margin-top: 8px;
+    }
+
+    &-articles::after {
+      margin-top: 23px;
+    }
+  }
+
+}
